@@ -3,7 +3,6 @@
 
 **SLLM**, is a compact, efficient sub-word Language Model trained from scratch and fine-tuned for specialized tasks. It's designed for fast experimentation and deep understanding of LLM internals.
 
----
 
 ## Pretraining Details
 
@@ -18,10 +17,10 @@ The model was pretrained on a clean English corpus that is extracted from Wikipe
 
 ###  Pretraining Metrics
 
-| ![Pretraining Metrics](metrics/pretraining_loss.png) |
+| ![Pretraining Metrics](metrics/training_metrics_30k_steps (1).png) |
 
----
 
+training_metrics_30k_steps (1).png
 ##  Fine-Tuning Details
 
 The pretrained model was then **fine-tuned on task-specific text data**, on story texts collected.
@@ -33,7 +32,7 @@ The pretrained model was then **fine-tuned on task-specific text data**, on stor
 ###  Fine-Tuning Metrics
 
 
-| ![Fine-tuning Metrics](metrics/finetuning_loss.png) | 
+| ![Fine-tuning Metrics](metrics/training_metrics.png) | 
 
 ---
 
