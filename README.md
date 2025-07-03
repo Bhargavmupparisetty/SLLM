@@ -17,10 +17,9 @@ The model was pretrained on a clean English corpus that is extracted from Wikipe
 
 ###  Pretraining Metrics
 
-| ![Pretraining Metrics](metrics/training_metrics_30k_steps (1).png) |
+![Pretraining Metrics](metrics/pretrain_metrics.png) 
 
 
-training_metrics_30k_steps (1).png
 ##  Fine-Tuning Details
 
 The pretrained model was then **fine-tuned on task-specific text data**, on story texts collected.
@@ -32,9 +31,8 @@ The pretrained model was then **fine-tuned on task-specific text data**, on stor
 ###  Fine-Tuning Metrics
 
 
-| ![Fine-tuning Metrics](metrics/training_metrics.png) | 
+![Fine-tuning Metrics](metrics/finetune_metrics.png) 
 
----
 
 ##  Features
 
@@ -45,7 +43,6 @@ The pretrained model was then **fine-tuned on task-specific text data**, on stor
 -  Causal Masking for autoregressive modeling
 -  Text Generation with nucleus sampling (top-k + top-p)
 
----
 
 ##  Try Text Generation
 
