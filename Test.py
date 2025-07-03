@@ -5,8 +5,8 @@ import os
 from sllm import SmallLLM, HuggingFaceBPETokenizer, TextGenerator
 
 # CONFIG
-CHECKPOINT_PATH = "C:/Users/bharg/Downloads/finetuned_model_final.pt"   
-TOKENIZER_PATH = "bpe_tokenizer.json"
+CHECKPOINT_PATH = "/models/finetuned_model.pt"   
+TOKENIZER_PATH = "/Tokenizer/bpe_tokenizer.json"
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load Tokenizer 

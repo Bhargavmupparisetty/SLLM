@@ -361,9 +361,9 @@ class ModelFineTuner:
 
 def main():
 
-    MODEL_PATH = '/kaggle/input/sllm/pytorch/default/1/final_model_30k_steps (1).pt'
-    TOKENIZER_PATH = '/kaggle/input/tokenizer-sllm/bpe_tokenizer.json'
-    FINETUNE_FILE = '/kaggle/input/finetune/merged_output.txt'
+    MODEL_PATH = '/models/pretrained_model.pt'
+    TOKENIZER_PATH = '/Tokenizer/bpe_tokenizer.json'
+    FINETUNE_FILE = '/Tokenizer/merged_output.txt'
     
 
     finetuner = ModelFineTuner(MODEL_PATH, TOKENIZER_PATH)
@@ -376,7 +376,7 @@ def main():
         max_length=128,
         val_split=0.1,
         save_every=1,
-        output_dir='/kaggle/working/finetuned_model',
+        output_dir='/models/finetuned_model',
         accumulation_steps=2 
     )
     
